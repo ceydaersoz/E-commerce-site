@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sneaksuplogo {
+            width: 150px;
+        }
+
+        .form-login {
+            border-top: 1px solid rgba(112, 112, 112, 0.159);
+            border-bottom: 1px solid rgba(112, 112, 112, 0.159);
+            border-left: none;
+            border-right: none;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <!-- NAVBAR START -->
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid" style="height: 10vh;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="width: 20%; margin-left: 100px;" class="collapse navbar-collapse justify-content-start"
+                id="navbarNavDropdown">
+                <a class="navbar-brand" href="index.html"><img
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/Thumbs/0100470.png"
+                        class="sneaksuplogo" alt=""></a>
+            </div>
+
+            <div style="width: 60%;" class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kadın
+                        </a>
+                        <ul class="dropdown-menu dropdown-center" style="width: 1000px">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Erkek
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Çocuk
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Basketbol
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sneaker
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Markalar
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Yeniler</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sürdürülebilirlik</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div style="width: 20%; margin-right: 100px;" class="collapse navbar-collapse justify-content-end px-2"
+                id="navbarNavDropdown">
+                <ul class="navbar-nav gap-3">
+                    <li><a href=""><img
+                                src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/search.svg"
+                                fetchpriority="high" alt="Ara" class="header-icons" width="15"></a></li>
+                    <li><a href="" class="text-decoration-none text-black">Ara</a></li>
+
+                    <li>
+                        <div class="dropdown text-start">
+                            <a href="#" class="d-block link-body-emphasis text-decoration-none"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/login.svg"
+                                    alt="mdo" width="20">
+                            </a>
+                            <ul class="dropdown-menu text-small rounded-0" style="width: 250px; margin-left: -100px;">
+                                <li>
+                                    <div
+                                        class="dropdown-custom-content d-flex flex-column justify-content-center align-items-center">
+                                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-header-logo-special.svg"
+                                            alt="SneaksUp Friends" class="loyalty-header-logo w-100 px-3">
+                                        <button class="btn rounded-0 border border-1 mt-3 d-flex justify-content-start"
+                                            style="width: 215px;"><a href="login.html"
+                                                class="text-decoration-none text-dark"><img
+                                                    src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-header-login-special.svg"
+                                                    alt="SneaksUp Friends" class="ml-1 me-2">Giriş Yap</a></button>
+                                        <button class="btn rounded-0 border border-1 my-3 d-flex justify-content-start"
+                                            style="width: 215px;"><a href="register.html"
+                                                class="text-decoration-none text-dark"><img
+                                                    src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-header-login-special.svg"
+                                                    alt="SneaksUp Friends" class="ml-1 me-2">Üye Ol</a></button>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="cart.html"><img
+                                src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/cart.svg"
+                                fetchpriority="high" class="header-icons"></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!--NAVBAR END-->
+
+    <div class="d-flex justify-content-center m-auto" style="width: 85%;">
+        <div style="width: 40%;">
+            <div class="form-login py-3">
+                <a href="login.html" class="text-decoration-none text-black ps-3 pe-4">Giriş Yap</a>
+                <a href="register.html" class="text-decoration-none text-black">Üye Ol</a>
+            </div>
+
+            <form style="width: 90%;">
+                <div class="form-floating mb-2 mt-4">
+                    <input type="email" class="form-control rounded-0 w-100" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">E-posta* </label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control rounded-0 w-100" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">Şifre *</label>
+                </div>
+
+                <div class="form-check w-100 text-start my-3 d-flex justify-content-between">
+                    <div>
+                        <input class="form-check-input rounded-0" type="checkbox" value="remember-me"
+                            id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Beni Hatırla
+                        </label>
+                    </div>
+                    <a href="#" class="text-black">Şifremi Unuttum</a>
+                </div>
+                <button class="btn btn-primary py-2 w-100 mt-5 border border-0 rounded-0 text-black fw-bold"
+                    type="submit" style="background-color: #DAFF02;">GİRİŞ YAP</button>
+
+                <div class="w-100 d-flex justify-content-center mt-5">
+                    <a href="#" class="text-black">Üye Olmadan Devam Et</a>
+                </div>
+            </form>
+        </div>
+
+        <div style="width: 60%;">
+            <img class="w-100" decoding="auto"
+                src="https://img-sneaksupincommerce.mncdn.com/Content/Images/Thumbs/0151348.jpeg" loading=""
+                alt="Sneaks Up">
+        </div>
+    </div>
+
+
+    <div class="m-auto my-5" style="width: 85%;">
+        <div class="d-flex border border-1 gap-5 flex-wrap">
+            <div class="d-flex py-4 gap-2">
+                <img class="p-3" src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-friends.svg"
+                    alt="SneaksUp Friends">
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                    <span class="fw-bold">Ayrıcalıkları yaşamaya hazır mısın?</span>
+                    <button type="button" class="bg-black text-white mt-1 border-0" style="width: 150px; height: 40px;">DETAYLARI GÖR</button>
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="d-flex align-items-center justify-content-end gap-3 flex-wrap p-4">
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-person.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Her Alışverişten Token Kazan</p>
+                </div>
+    
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-cargo.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Tüm Siparişlerin Ücretsiz Kargo</p>
+                </div>
+    
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-card.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Öncelikli Raffle Katılım Hakkı</p>
+                </div>
+    
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-phone.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Öncelikli Müşteri Hizmetleri</p>
+                </div>
+    
+    
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-other.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Diğer Ayrıcalıklar</p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <!-- FOOTER START -->
+
+
+    <div class=" border border-1 w-100" style="background-color: #f5f5f5;">
+        <footer class="px-5 mx-5">
+            <div class="border border-1 d-flex justify-content-between my-5">
+                <div class="d-flex gap-5 flex-wrap">
+                    <img src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/sneaksup.svg"
+                        class="footerlogo" alt="" title="" style="width: 40%;">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/facebook.svg">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/twitter.svg">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/youtube.svg">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/instagram.svg">
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/appstore.png"
+                        style="width: 180px; height: 43px;" alt="" title="">
+                    <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/playstore.png"
+                        style="width: 180px; height: auto;" alt="" title="">
+                </div>
+
+            </div>
+
+
+            <div class="row d-flex flex-wrap">
+                <div class="col-6 col-md-4">
+                    <h5 class="mb-4" style="font-size: 16px;">SANA ÖZEL</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item d-flex mb-4">
+                            <img class="pe-3"
+                                src="https://img-sneaksupincommerce.mncdn.com/Content/Files/magazadanteslim.svg">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="nav-link p-0 text-black mb-2">MAĞAZADAN
+                                    TESLİM</a>
+                                <span class="text-black" style="font-size: 11px;">Siparişini herhangi bir mağazamızdan,
+                                    kargo ücretsiz teslim alabilirsin.</span>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mb-4 d-flex"><img class="pe-3"
+                                src="https://img-sneaksupincommerce.mncdn.com/Content/Files/sadakatprogrami.svg">
+                            <div>
+                                <a href="#" class="nav-link p-0 text-black mb-2">SADAKAT
+                                    PROGRAMI</a>
+                                <span class="text-black" style="font-size: 11px;">Friends Programı ile yapacağın her
+                                    alışverişten tokenlar ve ayrıcalıklar
+                                    kazanabilirsin.</span>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mb-4 d-flex"><img class="pe-3"
+                                src="https://img-sneaksupincommerce.mncdn.com/Content/Files/car.svg">
+                            <div>
+                                <a href="#" class="nav-link p-0 text-black mb-2">ÜCRETSİZ
+                                    KARGO</a>
+                                <span class="text-black" style="font-size: 11px;">1.000 TL üzeri siparişlerinde kargon
+                                    bizden.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4 mb-3">
+                    <h5 class="mb-4" style="font-size: 16px;">KATEGORİLER</h5>
+                    <div class="d-flex gap-5">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Nike Air
+                                    Force</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Nike
+                                    Blazer</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Air
+                                    Jordan</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Vans Old
+                                    Skool</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">adidas
+                                    Forum</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Puma
+                                    Slipstream</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Nike
+                                    Airmax</a></li>
+                        </ul>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Tüm
+                                    Koleksiyonlar</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Çok
+                                    Satanlar</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black>İndirim</a>
+                            </li>
+                            <li class=" nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                        style="font-size: 14px;">Basketbol</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">NBA</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Sneaker</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Çevre
+                                    Dostu</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-4" style="font-size: 16px;">YARDIM</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">İletişim</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Favorilerim</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Hesabım</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Sipariş
+                                Takibi</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">İade ve
+                                Değişim</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Sıkça Sorulan
+                                Sorular</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">İşlem Rehberi</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-4" style="font-size: 16px;">SNEAKS UP</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Bilgi Toplumu
+                                Hizmetleri</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Mağazalar</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Kariyer</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Sneaks Up
+                                Blog</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="d-flex justify-content-between gap-5 flex-wrap flex-sm-row py-4 my-4 border-top">
+                <div class="d-flex gap-5 flex-wrap flex-sm-row">
+                    <p class="text-black" style="font-size: 11px;">© 2023 Sneaks Up Tüm Hakkı Saklıdır.</p>
+                    <a class="text-decoration-none text-black" href="#" style="font-size: 11px;">KVKK</a>
+                    <a class="text decoration-none text-black" href="#" style="font-size: 11px;">Veri Güvenliği
+                        Politikası</a>
+                    <a class="text-decoration-none text-black" href="#" style="font-size: 11px;">Çerez Politikası</a>
+                </div>
+                <div>
+                    <a href="#"><img src="https://cdn-sneaksupincommerce.mncdn.com/Content/images/inveon.png"
+                            style="width: 70px !important;"></a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- FOOTER END -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+</html>

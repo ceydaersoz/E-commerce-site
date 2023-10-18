@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sneaksuplogo {
+            width: 150px;
+        }
+
+        .form-login {
+            border-top: 1px solid rgba(112, 112, 112, 0.159);
+            border-bottom: 1px solid rgba(112, 112, 112, 0.159);
+            border-left: none;
+            border-right: none;
+        }
+
+
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .product-card {
+            width: 250px;
+            position: relative;
+            box-shadow: 0 2px 7px #dfdfdf;
+            margin: 50px auto;
+            background: #fafafa;
+        }
+
+        .product-tumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            background: #f0f0f0;
+        }
+
+        .product-tumb img {
+            height: 100%;
+        }
+
+        .product-details {
+            padding: 30px;
+        }
+
+        .product-catagory {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ccc;
+            margin-bottom: 18px;
+        }
+
+        .product-details h4 a {
+            font-weight: 500;
+            display: block;
+            text-transform: uppercase;
+            color: #363636;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .product-details h4 a:hover {
+            color: #fbb72c;
+        }
+
+
+        .product-bottom-details {
+            overflow: hidden;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .product-bottom-details div {
+            float: left;
+            width: 50%;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #fbb72c;
+            font-weight: 600;
+        }
+
+        .product-price small {
+            font-size: 80%;
+            font-weight: 400;
+            text-decoration: line-through;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .product-links {
+            text-align: right;
+        }
+
+        .product-links a {
+            display: inline-block;
+            margin-left: 5px;
+            color: #e1e1e1;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .product-links a:hover {
+            color: #fbb72c;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <!-- NAVBAR START -->
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid" style="height: 10vh;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="width: 20%; margin-left: 100px;" class="collapse navbar-collapse justify-content-start"
+                id="navbarNavDropdown">
+                <a class="navbar-brand" href="index.html"><img
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/Thumbs/0100470.png"
+                        class="sneaksuplogo" alt=""></a>
+            </div>
+
+            <div style="width: 60%;" class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kadın
+                        </a>
+                        <ul class="dropdown-menu dropdown-center" style="width: 1000px">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Erkek
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Çocuk
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Basketbol
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sneaker
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Markalar
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Yeniler</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sürdürülebilirlik</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div style="width: 20%; margin-right: 100px;" class="collapse navbar-collapse justify-content-end px-2"
+                id="navbarNavDropdown">
+                <ul class="navbar-nav gap-3">
+                    <li><a href=""><img
+                                src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/search.svg"
+                                fetchpriority="high" alt="Ara" class="header-icons" width="15"></a></li>
+                    <li><a href="" class="text-decoration-none text-black">Ara</a></li>
+
+                    <li>
+                        <div class="dropdown text-start">
+                            <a href="#" class="d-block link-body-emphasis text-decoration-none"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/login.svg"
+                                    alt="mdo" width="20">
+                            </a>
+                            <ul class="dropdown-menu text-small rounded-0" style="width: 250px; margin-left: -100px;">
+                                <li>
+                                    <div
+                                        class="dropdown-custom-content d-flex flex-column justify-content-center align-items-center">
+                                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-header-logo-special.svg"
+                                            alt="SneaksUp Friends" class="loyalty-header-logo w-100 px-3">
+                                        <button class="btn rounded-0 border border-1 mt-3 d-flex justify-content-start"
+                                            style="width: 215px;"><a href="login.html"
+                                                class="text-decoration-none text-dark"><img
+                                                    src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-header-login-special.svg"
+                                                    alt="SneaksUp Friends" class="ml-1 me-2">Giriş Yap</a></button>
+                                        <button class="btn rounded-0 border border-1 my-3 d-flex justify-content-start"
+                                            style="width: 215px;"><a href="register.html"
+                                                class="text-decoration-none text-dark"><img
+                                                    src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-header-login-special.svg"
+                                                    alt="SneaksUp Friends" class="ml-1 me-2">Üye Ol</a></button>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="cart.html"><img
+                                src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/cart.svg"
+                                fetchpriority="high" class="header-icons"></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!--NAVBAR END-->
+
+    <div class="d-flex flex-wrap mx-5" >
+        <div class="product-card">
+            <div class="product-tumb">
+                <img class="" src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0108486_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, sweatshirt</span>
+                <h4><a href="">Nike W Nsw Air Flc Top Fz</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>81549,00 TL</small>1239,20 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0080893_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, etek</span>
+                <h4><a href="">Nike W Nsw İcn Clash Skirt Ft</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>499,00 TL</small>249,50 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0106710_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, etek</span>
+                <h4><a href="">Nike W Nsw Air Pique Skirt</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>849,00 TL</small>509,40 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0084771_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, sweatshirt</span>
+                <h4><a href="">Dickies Icon Logo Hoodie W</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>$2299,00 TL</small>1379,40 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0126177_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, spor sütyeni</span>
+                <h4><a href="">Nike W Nk Df Shape Zip Front Bra</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>1499,00 TL</small>1049,30 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0134421_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, sneaker</span>
+                <h4><a href="">Jordan Air 11 Retro (Gs)</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price">3999,00 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0111812_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, eşofman altı</span>
+                <h4><a href="">Nike W Nsw Essntl Clctn Flc Mr Pant</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>2299,00 TL</small>1609,30 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0103917_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, şort</span>
+                <h4><a href="">Nike W Np 365 Short 3İn</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price">899,00 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0112011_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, spor sütyeni</span>
+                <h4><a href="">Nike W Nk Air Df Swsh Hn Mesh Bra</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>899,00 TL</small>629,30 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="https://img-sneaksupincommerce.mncdn.com/mnresize/746/746/Content/Images/Originals/0102639_0.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Kadın, sweatshirt</span>
+                <h4><a href="">Jordan W J Essen Fleece Crew</a></h4>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>1399,00 TL</small>1119,20 TL</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER START -->
+
+
+    <div class=" border border-1 w-100" style="background-color: #f5f5f5;">
+        <footer class="px-5 mx-5">
+            <div class="border border-1 d-flex justify-content-between my-5">
+                <div class="d-flex gap-5 flex-wrap">
+                    <img src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/sneaksup.svg"
+                        class="footerlogo" alt="" title="" style="width: 40%;">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/facebook.svg">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/twitter.svg">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/youtube.svg">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/instagram.svg">
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/appstore.png"
+                        style="width: 180px; height: 43px;" alt="" title="">
+                    <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/playstore.png"
+                        style="width: 180px; height: auto;" alt="" title="">
+                </div>
+
+            </div>
+
+
+            <div class="row d-flex flex-wrap">
+                <div class="col-6 col-md-4">
+                    <h5 class="mb-4" style="font-size: 16px;">SANA ÖZEL</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item d-flex mb-4">
+                            <img class="pe-3"
+                                src="https://img-sneaksupincommerce.mncdn.com/Content/Files/magazadanteslim.svg">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="nav-link p-0 text-black mb-2">MAĞAZADAN
+                                    TESLİM</a>
+                                <span class="text-black" style="font-size: 11px;">Siparişini herhangi bir mağazamızdan,
+                                    kargo ücretsiz teslim alabilirsin.</span>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mb-4 d-flex"><img class="pe-3"
+                                src="https://img-sneaksupincommerce.mncdn.com/Content/Files/sadakatprogrami.svg">
+                            <div>
+                                <a href="#" class="nav-link p-0 text-black mb-2">SADAKAT
+                                    PROGRAMI</a>
+                                <span class="text-black" style="font-size: 11px;">Friends Programı ile yapacağın her
+                                    alışverişten tokenlar ve ayrıcalıklar
+                                    kazanabilirsin.</span>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mb-4 d-flex"><img class="pe-3"
+                                src="https://img-sneaksupincommerce.mncdn.com/Content/Files/car.svg">
+                            <div>
+                                <a href="#" class="nav-link p-0 text-black mb-2">ÜCRETSİZ
+                                    KARGO</a>
+                                <span class="text-black" style="font-size: 11px;">1.000 TL üzeri siparişlerinde kargon
+                                    bizden.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4 mb-3">
+                    <h5 class="mb-4" style="font-size: 16px;">KATEGORİLER</h5>
+                    <div class="d-flex gap-5">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Nike Air
+                                    Force</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Nike
+                                    Blazer</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Air
+                                    Jordan</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Vans Old
+                                    Skool</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">adidas
+                                    Forum</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Puma
+                                    Slipstream</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Nike
+                                    Airmax</a></li>
+                        </ul>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Tüm
+                                    Koleksiyonlar</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Çok
+                                    Satanlar</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black>İndirim</a>
+                            </li>
+                            <li class=" nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                        style="font-size: 14px;">Basketbol</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">NBA</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Sneaker</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Çevre
+                                    Dostu</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-4" style="font-size: 16px;">YARDIM</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">İletişim</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Favorilerim</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Hesabım</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Sipariş
+                                Takibi</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">İade ve
+                                Değişim</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Sıkça Sorulan
+                                Sorular</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">İşlem Rehberi</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-4" style="font-size: 16px;">SNEAKS UP</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Bilgi Toplumu
+                                Hizmetleri</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Mağazalar</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Kariyer</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Sneaks Up
+                                Blog</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="d-flex justify-content-between gap-5 flex-wrap flex-sm-row py-4 my-4 border-top">
+                <div class="d-flex gap-5 flex-wrap flex-sm-row">
+                    <p class="text-black" style="font-size: 11px;">© 2023 Sneaks Up Tüm Hakkı Saklıdır.</p>
+                    <a class="text-decoration-none text-black" href="#" style="font-size: 11px;">KVKK</a>
+                    <a class="text decoration-none text-black" href="#" style="font-size: 11px;">Veri Güvenliği
+                        Politikası</a>
+                    <a class="text-decoration-none text-black" href="#" style="font-size: 11px;">Çerez Politikası</a>
+                </div>
+                <div>
+                    <a href="#"><img src="https://cdn-sneaksupincommerce.mncdn.com/Content/images/inveon.png"
+                            style="width: 70px !important;"></a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- FOOTER END -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+</html>

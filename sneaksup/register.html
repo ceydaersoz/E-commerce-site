@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sneaksuplogo {
+            width: 150px;
+        }
+
+        .form-login {
+            border-top: 1px solid rgba(112, 112, 112, 0.159);
+            border-bottom: 1px solid rgba(112, 112, 112, 0.159);
+            border-left: none;
+            border-right: none;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <!-- NAVBAR START-->
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid" style="height: 10vh;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="width: 20%; margin-left: 100px;" class="collapse navbar-collapse justify-content-start"
+                id="navbarNavDropdown">
+                <a class="navbar-brand" href="index.html"><img
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/Thumbs/0100470.png"
+                        class="sneaksuplogo" alt=""></a>
+            </div>
+
+            <div style="width: 60%;" class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kadın
+                        </a>
+                        <ul class="dropdown-menu dropdown-center" style="width: 1000px">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Erkek
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Çocuk
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Basketbol
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sneaker
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Markalar
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Yeniler</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sürdürülebilirlik</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div style="width: 20%; margin-right: 100px;" class="collapse navbar-collapse justify-content-end px-2"
+                id="navbarNavDropdown">
+                <ul class="navbar-nav gap-3">
+                    <li><a href=""><img
+                                src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/search.svg"
+                                fetchpriority="high" alt="Ara" class="header-icons" width="15"></a></li>
+                    <li><a href="" class="text-decoration-none text-black">Ara</a></li>
+
+                    <li>
+                        <div class="dropdown text-start">
+                            <a href="#" class="d-block link-body-emphasis text-decoration-none"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/login.svg"
+                                    alt="mdo" width="20">
+                            </a>
+                            <ul class="dropdown-menu text-small rounded-0" style="width: 250px; margin-left: -100px;">
+                                <li>
+                                    <div
+                                        class="dropdown-custom-content d-flex flex-column justify-content-center align-items-center">
+                                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-header-logo-special.svg"
+                                            alt="SneaksUp Friends" class="loyalty-header-logo w-100 px-3">
+                                        <button class="btn rounded-0 border border-1 mt-3 d-flex justify-content-start"
+                                            style="width: 215px;"><a href="login.html"
+                                                class="text-decoration-none text-dark"><img
+                                                    src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-header-login-special.svg"
+                                                    alt="SneaksUp Friends" class="ml-1 me-2">Giriş Yap</a></button>
+                                        <button class="btn rounded-0 border border-1 my-3 d-flex justify-content-start"
+                                            style="width: 215px;"><a href="register.html"
+                                                class="text-decoration-none text-dark"><img
+                                                    src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-header-login-special.svg"
+                                                    alt="SneaksUp Friends" class="ml-1 me-2">Üye Ol</a></button>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="cart.html"><img
+                                src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/cart.svg"
+                                fetchpriority="high" class="header-icons"></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    
+
+
+
+    <!--NAVBAR END-->
+
+    <div class="d-flex justify-content-center m-auto flex-wrap" style="width: 85%;">
+        <div style="width: 40%;">
+            <div class="form-login py-3">
+                <a href="login.html" class="text-decoration-none text-black ps-3 pe-4">Giriş Yap</a>
+                <a href="register.html" class="text-decoration-none text-black">Üye Ol</a>
+            </div>
+
+            <form style="width: 90%;">
+                <div class="form-floating mb-2 mt-4">
+                    <input type="email" class="form-control rounded-0 w-100" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">Ad</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="password" class="form-control rounded-0 w-100" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">Soyad</label>
+                </div>
+
+                <div class="form-floating mb-2">
+                    <input type="password" class="form-control rounded-0 w-100" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">Cep Telefonu</label>
+                </div>
+
+                <div class="form-floating mb-2">
+                    <input type="password" class="form-control rounded-0 w-100" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">E-posta</label>
+                </div>
+
+                <div class="form-floating mb-2">
+                    <input type="password" class="form-control rounded-0 w-100" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">Şifre</label>
+                </div>
+
+                <div class="form-floating mb-2">
+                    <input type="password" class="form-control rounded-0 w-100" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">Cinsiyet</label>
+                </div>
+
+                <div class="w-100 d-flex gap-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Gün</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+
+                    </select>
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Ay</option>
+                        <option value="1">Ocak</option>
+                        <option value="2">Şubat</option>
+                        <option value="3">Mart</option>
+                        <option value="4">Nisan</option>
+                        <option value="5">Mayıs</option>
+                        <option value="6">Haziran</option>
+                        <option value="7">Temmuz</option>
+                        <option value="8">Ağustos</option>
+                        <option value="9">Eylül</option>
+                        <option value="10">Ekim</option>
+                        <option value="11">Kasım</option>
+                        <option value="12">Aralık</option>
+                    </select>
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="0">Yıl</option>
+                        <option value="1913">1913</option>
+                        <option value="1914">1914</option>
+                        <option value="1915">1915</option>
+                        <option value="1916">1916</option>
+                        <option value="1917">1917</option>
+                        <option value="1918">1918</option>
+                        <option value="1919">1919</option>
+                        <option value="1920">1920</option>
+                        <option value="1921">1921</option>
+                        <option value="1922">1922</option>
+                        <option value="1923">1923</option>
+                        <option value="1924">1924</option>
+                        <option value="1925">1925</option>
+                        <option value="1926">1926</option>
+                        <option value="1927">1927</option>
+                        <option value="1928">1928</option>
+                        <option value="1929">1929</option>
+                        <option value="1930">1930</option>
+                        <option value="1931">1931</option>
+                        <option value="1932">1932</option>
+                        <option value="1933">1933</option>
+                        <option value="1934">1934</option>
+                        <option value="1935">1935</option>
+                        <option value="1936">1936</option>
+                        <option value="1937">1937</option>
+                        <option value="1938">1938</option>
+                        <option value="1939">1939</option>
+                        <option value="1940">1940</option>
+                        <option value="1941">1941</option>
+                        <option value="1942">1942</option>
+                        <option value="1943">1943</option>
+                        <option value="1944">1944</option>
+                        <option value="1945">1945</option>
+                        <option value="1946">1946</option>
+                        <option value="1947">1947</option>
+                        <option value="1948">1948</option>
+                        <option value="1949">1949</option>
+                        <option value="1950">1950</option>
+                        <option value="1951">1951</option>
+                        <option value="1952">1952</option>
+                        <option value="1953">1953</option>
+                        <option value="1954">1954</option>
+                        <option value="1955">1955</option>
+                        <option value="1956">1956</option>
+                        <option value="1957">1957</option>
+                        <option value="1958">1958</option>
+                        <option value="1959">1959</option>
+                        <option value="1960">1960</option>
+                        <option value="1961">1961</option>
+                        <option value="1962">1962</option>
+                        <option value="1963">1963</option>
+                        <option value="1964">1964</option>
+                        <option value="1965">1965</option>
+                        <option value="1966">1966</option>
+                        <option value="1967">1967</option>
+                        <option value="1968">1968</option>
+                        <option value="1969">1969</option>
+                        <option value="1970">1970</option>
+                        <option value="1971">1971</option>
+                        <option value="1972">1972</option>
+                        <option value="1973">1973</option>
+                        <option value="1974">1974</option>
+                        <option value="1975">1975</option>
+                        <option value="1976">1976</option>
+                        <option value="1977">1977</option>
+                        <option value="1978">1978</option>
+                        <option value="1979">1979</option>
+                        <option value="1980">1980</option>
+                        <option value="1981">1981</option>
+                        <option value="1982">1982</option>
+                        <option value="1983">1983</option>
+                        <option value="1984">1984</option>
+                        <option value="1985">1985</option>
+                        <option value="1986">1986</option>
+                        <option value="1987">1987</option>
+                        <option value="1988">1988</option>
+                        <option value="1989">1989</option>
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+
+                </div>
+
+                <div class="form-check w-100 text-start mt-4 d-flex justify-content-between">
+                    <div>
+                        <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault1">
+                        <label class="form-check-label" for="flexCheckDefault1">
+                            <span class="text-decoration-underline">Üyelik Sözleşmesi</span>’ni, <span
+                                class="text-decoration-underline">Aydınlatma ve Rıza Metni</span>’ni, <span
+                                class="text-decoration-underline">Gizlilik ve Çerez Politikası</span>’nı okudum,
+                            onaylıyorum.
+                        </label>
+                    </div>
+                </div>
+                <div class="form-check w-100 text-start my-3 d-flex justify-content-between">
+                    <div>
+                        <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault2">
+                        <label class="form-check-label" for="flexCheckDefault2">
+                            Kampanyalardan, çekiliş sonuçlarından ve Sneaks Up'tan haberdar olmak için elektronik ileti
+                            almak istiyorum.
+                        </label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary py-2 w-100 mt-1 border border-0 rounded-0 text-black fw-bold"
+                    type="submit" style="height: 60px; background-color: #DAFF02;">ÜYE OL</button>
+
+            </form>
+        </div>
+
+        <div style="width: 60%;">
+            <img class="w-100" decoding="auto"
+                src="https://img-sneaksupincommerce.mncdn.com/Content/Images/Thumbs/0151348.jpeg" loading=""
+                alt="Sneaks Up">
+        </div>
+    </div>
+
+
+ <div class="m-auto my-5" style="width: 85%;">
+        <div class="d-flex border border-1 gap-5 flex-wrap">
+            <div class="d-flex py-4 gap-2">
+                <img class="p-3" src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-friends.svg"
+                    alt="SneaksUp Friends">
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                    <span class="fw-bold">Ayrıcalıkları yaşamaya hazır mısın?</span>
+                    <button type="button" class="bg-black text-white mt-1 border-0" style="width: 150px; height: 40px;">DETAYLARI GÖR</button>
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="d-flex align-items-center justify-content-end gap-3 flex-wrap p-4">
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-person.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Her Alışverişten Token Kazan</p>
+                </div>
+    
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-cargo.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Tüm Siparişlerin Ücretsiz Kargo</p>
+                </div>
+    
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-card.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Öncelikli Raffle Katılım Hakkı</p>
+                </div>
+    
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-phone.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Öncelikli Müşteri Hizmetleri</p>
+                </div>
+    
+    
+                <div>
+                    <img class="icon-w"
+                        src="https://img-sneaksupincommerce.mncdn.com/Content/Images/loyalty/loyalty-banner-other.svg"
+                        alt="SneaksUp Friends">
+                    <p class="text-black fw-bold" style="font-size: 11px; letter-spacing: -0.1em;">Diğer Ayrıcalıklar</p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <!-- FOOTER START -->
+
+
+    <div class=" border border-1 w-100" style="background-color: #f5f5f5;">
+        <footer class="px-5 mx-5">
+            <div class="border border-1 d-flex justify-content-between my-5">
+                <div class="d-flex gap-5 flex-wrap">
+                    <img src="https://cdn-sneaksupincommerce.mncdn.com/Themes/SneaksUp/Content/_images/sneaksup.svg"
+                        class="footerlogo" alt="" title="" style="width: 40%;">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/facebook.svg">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/twitter.svg">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/youtube.svg">
+                        <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/instagram.svg">
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/appstore.png"
+                        style="width: 180px; height: 43px;" alt="" title="">
+                    <img src="https://img-sneaksupincommerce.mncdn.com/Content/Files/playstore.png"
+                        style="width: 180px; height: auto;" alt="" title="">
+                </div>
+
+            </div>
+
+
+            <div class="row d-flex flex-wrap">
+                <div class="col-6 col-md-4">
+                    <h5 class="mb-4" style="font-size: 16px;">SANA ÖZEL</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item d-flex mb-4">
+                            <img class="pe-3"
+                                src="https://img-sneaksupincommerce.mncdn.com/Content/Files/magazadanteslim.svg">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="nav-link p-0 text-black mb-2">MAĞAZADAN
+                                    TESLİM</a>
+                                <span class="text-black" style="font-size: 11px;">Siparişini herhangi bir mağazamızdan,
+                                    kargo ücretsiz teslim alabilirsin.</span>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mb-4 d-flex"><img class="pe-3"
+                                src="https://img-sneaksupincommerce.mncdn.com/Content/Files/sadakatprogrami.svg">
+                            <div>
+                                <a href="#" class="nav-link p-0 text-black mb-2">SADAKAT
+                                    PROGRAMI</a>
+                                <span class="text-black" style="font-size: 11px;">Friends Programı ile yapacağın her
+                                    alışverişten tokenlar ve ayrıcalıklar
+                                    kazanabilirsin.</span>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mb-4 d-flex"><img class="pe-3"
+                                src="https://img-sneaksupincommerce.mncdn.com/Content/Files/car.svg">
+                            <div>
+                                <a href="#" class="nav-link p-0 text-black mb-2">ÜCRETSİZ
+                                    KARGO</a>
+                                <span class="text-black" style="font-size: 11px;">1.000 TL üzeri siparişlerinde kargon
+                                    bizden.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4 mb-3">
+                    <h5 class="mb-4" style="font-size: 16px;">KATEGORİLER</h5>
+                    <div class="d-flex gap-5">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Nike Air
+                                    Force</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Nike
+                                    Blazer</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Air
+                                    Jordan</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Vans Old
+                                    Skool</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">adidas
+                                    Forum</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Puma
+                                    Slipstream</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Nike
+                                    Airmax</a></li>
+                        </ul>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Tüm
+                                    Koleksiyonlar</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Çok
+                                    Satanlar</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black>İndirim</a>
+                            </li>
+                            <li class=" nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                        style="font-size: 14px;">Basketbol</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">NBA</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Sneaker</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                    style="font-size: 14px;">Çevre
+                                    Dostu</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-4" style="font-size: 16px;">YARDIM</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">İletişim</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Favorilerim</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Hesabım</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Sipariş
+                                Takibi</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">İade ve
+                                Değişim</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Sıkça Sorulan
+                                Sorular</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">İşlem Rehberi</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-4" style="font-size: 16px;">SNEAKS UP</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Bilgi Toplumu
+                                Hizmetleri</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Mağazalar</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Kariyer</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"
+                                style="font-size: 14px;">Sneaks Up
+                                Blog</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="d-flex justify-content-between gap-5 flex-wrap flex-sm-row py-4 my-4 border-top">
+                <div class="d-flex gap-5 flex-wrap flex-sm-row">
+                    <p class="text-black" style="font-size: 11px;">© 2023 Sneaks Up Tüm Hakkı Saklıdır.</p>
+                    <a class="text-decoration-none text-black" href="#" style="font-size: 11px;">KVKK</a>
+                    <a class="text decoration-none text-black" href="#" style="font-size: 11px;">Veri Güvenliği
+                        Politikası</a>
+                    <a class="text-decoration-none text-black" href="#" style="font-size: 11px;">Çerez Politikası</a>
+                </div>
+                <div>
+                    <a href="#"><img src="https://cdn-sneaksupincommerce.mncdn.com/Content/images/inveon.png"
+                            style="width: 70px !important;"></a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- FOOTER END -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+</html>
